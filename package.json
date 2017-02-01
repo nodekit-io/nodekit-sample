@@ -1,0 +1,24 @@
+{
+  "name": "nodekit-sample",
+  "version": "0.8.10",
+  "description": "Sample NodeKit application used by Command Line tools",
+  "homepage": "http://nodekit.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodekit-io/nodekit-sample.git"
+  },
+  "keywords": [
+    "nodekit"
+  ],
+  "author": "OffGrid Networks",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitter.im/nodekit-io/nodekit"
+  },
+  "scripts": {
+    "start": "cd app && react-scripts start",
+    "build": "cd app && react-scripts build && cd build && rm -f ../app.nkar && zip -r ../app.nkar .",
+    "test": "cd app && react-scripts test --env=jsdom",
+    "eject": "cd app && react-scripts eject"
+  }
+}

@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 30px;
+}
+
+.App-header {
+  background-color: #2A91F6;
+  height: 60px;
+  padding: 25px;
+  color: #F8F6F3;
+}
+
+.App-sidebar-item {
+  font-size: 12px;
+  text-align: left;
+}
+
+.App-sidebar-heading {
+  font-size: 20px;
+    padding: 1em;
+}
+
+h6 {
+  color:#8E8E93;
+}
