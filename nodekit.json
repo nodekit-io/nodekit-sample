@@ -1,0 +1,62 @@
+{
+    "$id": "io.nodekit.nodekitsample",
+    "$version": "0.0.1",
+    "$xmlns": "http://www.w3.org/ns/widgets",
+    "$xmlns:ogn": "http://nodekit.io/ns/1.0",
+    "name": "NodeKitSample",
+    "description": "Sample NodeKit application used by Command Line tools",
+    "author": {
+        "value": "OffGrid Networks",
+        "$email": "info@nodekit.io",
+        "$href": "http://nodekit.io"
+    },
+    "content": {
+        "$src": "index.html"
+    },
+    "access": {
+        "$origin": "*"
+    },
+    "allow-intent": [
+        {
+            "$href": "http://*/*",
+            "$yes": "ss"
+        },
+        {
+            "$href": "https://*/*"
+        },
+        {
+            "$href": "tel:*"
+        },
+        {
+            "$href": "sms:*"
+        },
+        {
+            "$href": "mailto:*"
+        },
+        {
+            "$href": "geo:*"
+        },
+        {
+            "$href": "internal:*"
+        }
+    ],
+    "platform": [
+        {
+            "$name": "android",
+            "allow-intent": {
+                "$href": "internal:*"
+            }
+        },
+        {
+            "$name": "ios",
+            "allow-intent": [
+                {
+                    "$href": "itms:*"
+                },
+                {
+                    "$href": "itms-apps:*"
+                }
+            ]
+        }
+    ]
+}
