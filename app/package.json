@@ -14,6 +14,7 @@
   "devDependencies": {
     "react-scripts": "0.8.4"
   },
+  "main": "app://app.nkar/index.html",
   "dependencies": {
     "mobx": "^2.7.0",
     "mobx-react": "^4.0.3",
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cd build && rm -f ../app.nkar && zip -r ../app.nkar .",
+    "build": "react-scripts build && cd build && cp -f ../package.json ./ && rm -f ../app.nkar && zip -r ../app.nkar .",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "cd app && react-scripts start",
-    "build": "cd app && react-scripts build && cd build && rm -f ../app.nkar && zip -r ../app.nkar .",
+    "build": "cd app && react-scripts build && cd build && cp -f ../package.json ./ && rm -f ../app.nkar && zip -r ../app.nkar .",
     "test": "cd app && react-scripts test --env=jsdom",
     "eject": "cd app && react-scripts eject"
   }
