@@ -14,7 +14,11 @@
   "devDependencies": {
     "react-scripts": "0.8.4"
   },
-  "main": "app://app.nkar/index.html",
+  "nodekit": {
+     "main": "app://app.nkar/index.html",
+     "unused-singlepageapp": "app://app.nkar/index.html",
+      "unused-electroapp": "app.nkar/electro.js"
+  },
   "dependencies": {
     "mobx": "^2.7.0",
     "mobx-react": "^4.0.3",
@@ -25,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cd build && cp -f ../package.json ./ && rm -f ../app.nkar && zip -r ../app.nkar .",
+    "build": "react-scripts build && cd build && cp -f ../package.json ./ && cp -f ../electro.js ./ && rm -f ../app.nkar && zip -r ../app.nkar .",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
