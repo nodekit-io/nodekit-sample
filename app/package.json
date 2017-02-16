@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cd build && cp -f ../package.json ./ && cp -f ../electro.js ./ && rm -f ../app.nkar && zip -r ../app.nkar .",
+    "build": "react-scripts build && rm -rf dist && cd build && cp -f ../package.json ./ && cp -f ../electro.js ./ && rm -rf ../dist && mkdir ../dist && zip -r ../dist/app.nkar . && cd ..",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
