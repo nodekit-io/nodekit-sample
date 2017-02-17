@@ -12,7 +12,7 @@
   "author": "__AUTHOR__",
   "license": "Apache-2.0",
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "fuse-box-react-scripts": "^0.9.3"
   },
   "nodekit": {
      "main": "app://app.nkar/index.html",
@@ -28,9 +28,9 @@
     "offgrid-components": "^0.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf dist && cd build && cp -f ../package.json ./ && cp -f ../electro.js ./ && rm -rf ../dist && mkdir ../dist && zip -r ../dist/app.nkar . && cd ..",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "fuse-box-react-scripts start",
+    "build": "fuse-box-react-scripts build && rm -rf dist && cd build && cp -f ../package.json ./ && cp -f ../electro.js ./ && rm -rf ../dist && mkdir ../dist && zip -r ../dist/app.nkar . && cd ..",
+    "test": "fuse-box-react-scripts test --env=jsdom",
+    "eject": "fuse-box-react-scripts eject"
   }
 }
