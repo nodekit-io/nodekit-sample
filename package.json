@@ -1,6 +1,6 @@
 {
   "name": "nodekit-sample",
-  "version": "0.8.15",
+  "version": "0.8.16",
   "description": "Sample NodeKit application used by Command Line tools",
   "homepage": "http://nodekit.io",
   "repository": {
