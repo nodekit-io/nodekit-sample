@@ -9,3 +9,4 @@ temp
 *.jar
 spec_tmp
 /app/build
+.fusebox

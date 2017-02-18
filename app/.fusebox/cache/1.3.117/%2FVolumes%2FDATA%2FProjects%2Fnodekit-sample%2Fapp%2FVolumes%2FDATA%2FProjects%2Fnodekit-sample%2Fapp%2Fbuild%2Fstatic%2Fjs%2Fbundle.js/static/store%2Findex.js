@@ -1,6 +1,0 @@
-module.exports = { contents : "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _messages = require('./messages');\n\nvar _messages2 = _interopRequireDefault(_messages);\n\nvar _uistate = require('./uistate');\n\nvar _uistate2 = _interopRequireDefault(_uistate);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/*\n* OffGrid Talkie\n*\n* Copyright (c) 2017 OffGrid Networks. All Rights Reserved.\n* SEE LICENSE\n*/\n\nvar store = {\n  messages: _messages2.default,\n  uistate: _uistate2.default\n};\n\nexports.default = store;", 
-dependencies : ["./messages","./uistate"], 
-sourceMap : "{\"version\":3,\"sources\":[\"store/index.js\"],\"names\":[\"store\",\"messages\",\"uistate\"],\"mappings\":\";;;;;;AAOA;;;;AACA;;;;;;AARA;;;;;;;AAUA,IAAMA,QAAQ;AACZC,8BADY;AAEZC;AAFY,CAAd;;kBAMeF,K\",\"file\":\"store/index.js\",\"sourcesContent\":[\"/*\\n* OffGrid Talkie\\n*\\n* Copyright (c) 2017 OffGrid Networks. All Rights Reserved.\\n* SEE LICENSE\\n*/\\n\\nimport MessagesStore from './messages';\\nimport UIStateStore from './uistate';\\n\\nconst store = {\\n  messages: MessagesStore,\\n  uistate: UIStateStore\\n};\\n\\n\\nexport default store;\"]}",
-headerContent : undefined, 
-mtime : 1485808069000
-};

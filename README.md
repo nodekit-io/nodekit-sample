@@ -7,9 +7,9 @@ For application developers, the backend can be written in pure Node javascript c
 
 Sample Node.js application used by nodekit-cli 
 
-## Installation
+## Installation using global nodekit command line
 
-Make sure you have a version of Node.js and npm installed (just to run the command line build tool, there is no Node backend)
+Make sure you have version >6 of Node.js and npm >3 installed (just to run the command line build tool, there is no Node backend)
 
 ``` bash
 npm install -g nodekit-cli
@@ -18,6 +18,17 @@ cd myapp
 nodekit add platform macos
 nodekit build macos
 nodekit run macos
+```
+
+## Installation without installing global packages
+
+``` bash
+git clone https://github.com/nodekit-io/nodekit-sample.git
+cd nodekit-sample
+npm install
+npm run platform -- macos
+npm run build 
+npm start
 ```
 
 ## Platforms

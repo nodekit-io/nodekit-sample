@@ -1,8 +1,7 @@
 {
   "name": "nodekit-sample",
-  "version": "0.8.16",
-  "description": "Sample NodeKit application used by Command Line tools",
-  "homepage": "http://nodekit.io",
+  "version": "0.8.17",
+  "description": "Sample {NK} NodeKit application created by NodeKit Command Line tools",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodekit-io/nodekit-sample.git"
@@ -12,8 +11,37 @@
   ],
   "author": "OffGrid Networks",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://gitter.im/nodekit-io/nodekit"
+  "devDependencies": {
+    "fuse-box-react-scripts": "^0.9.3",
+    "nodekit-cli": "^0.8.58"
   },
-  "scripts": {}
+  "directories": {
+    "src": "app",
+    "public": "app/assets",
+    "build": "app/build"
+  },
+  "nodekit": {
+    "main": "app://app.nkar/index.html",
+    "unused-singlepageapp": "app://app.nkar/index.html",
+    "unused-electroapp": "app.nkar/electro.js"
+  },
+  "dependencies": {
+    "mobx": "^3.1.0",
+    "mobx-react": "^4.0.3",
+    "moment": "^2.17.1",
+   
+    "offgrid-components": "^0.1.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "startjs": "fuse-box-react-scripts start",
+    "buildjs": "fuse-box-react-scripts build",
+    "packjs": "npm run buildjs && rm -rf app/dist && cd app/build && cp -f ../../package.json ./ && cp -f ../electro.js ./ && rm -rf ../dist && mkdir ../dist && zip -r ../dist/app.nkar . && cd ../..",
+    "testjs": "fuse-box-react-scripts test --env=jsdom",
+    "ejectjs": "fuse-box-react-scripts eject",
+    "platform": "nodekit-scripts platform",
+    "build": "npm run packjs && nodekit-scripts build",
+    "start": "nodekit-scripts run"
+  }
 }
